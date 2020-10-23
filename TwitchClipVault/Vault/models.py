@@ -8,7 +8,8 @@ class Clip(models.Model):
     CreatedAt = models.DateTimeField('video created')
     LengthInSecond = models.FloatField()
     ViewCount = models.IntegerField()
-    YoutubeId = models.CharField(max_length=100)
+    VideoId = models.CharField(max_length=100)
 
     def __str__(self):
         return self.Title
+
